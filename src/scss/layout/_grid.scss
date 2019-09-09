@@ -1,0 +1,62 @@
+.row {
+  margin-left: -$col-gutter/2;
+  margin-right: -$col-gutter/2;
+
+  @include mediaquery--sm() {
+    margin-left: -$col-gutter-sm/2;
+    margin-right: -$col-gutter-sm/2;
+  }
+
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+
+  .col {
+    float: left;
+    padding-left: $col-gutter/2;
+    padding-right: $col-gutter/2;
+
+    @include mediaquery--sm() {
+      padding-left: $col-gutter-sm/2;
+      padding-right: $col-gutter-sm/2;
+    }
+  }
+}
+
+@include mediaquery--lg {
+  @for $i from 1 through $col-num {
+    .col-#{$i} {
+      width: percentage(($i / $col-num));
+    }
+
+    .col-offset-#{$i} {
+      margin-left: percentage(($i / $col-num));
+    }
+  }
+}
+
+@include mediaquery--md() {
+  @for $i from 1 through $col-num {
+    .col--md-#{$i} {
+      width: percentage(($i / $col-num));
+    }
+
+    .col--md-offset-#{$i} {
+      margin-left: percentage(($i / $col-num));
+    }
+  }
+}
+
+@include mediaquery--sm() {
+  @for $i from 1 through $col-num {
+    .col--sm-#{$i} {
+      width: percentage(($i / $col-num));
+    }
+
+    .col--sm-offset-#{$i} {
+      margin-left: percentage(($i / $col-num));
+    }
+  }
+}

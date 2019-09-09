@@ -1,0 +1,27 @@
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  width: $container-width;
+}
+
+.container {
+  @extend %container;
+}
+
+.container--clear {
+  @extend %container;
+  background-color: inherit;
+}
+
+.container--light {
+  @extend %container;
+  background-color: $color-white;
+}
+
+.container--full {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

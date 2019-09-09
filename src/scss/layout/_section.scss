@@ -1,0 +1,250 @@
+[class^='section'] {
+  background-color: $color-white;
+}
+
+// Common Section (Section for Unique Page the end of the part)
+.section {
+  > [class^='container'] {
+    padding-bottom: 48px;
+
+    @include mediaquery--sm() {
+      padding-bottom: 32px;
+    }
+  }
+
+  &--xlg {
+    > [class^='container'] {
+      padding-bottom: 80px;
+  
+      @include mediaquery--sm() {
+        padding-bottom: 48px;
+      }
+    }
+  }
+
+  &--lg {
+    > [class^='container'] {
+      padding-bottom: 80px;
+  
+      @include mediaquery--md() {
+        padding-bottom: 64px;
+      }
+
+      @include mediaquery--sm() {
+        padding-bottom: 32px;
+      }
+    }
+
+    &.is-padding-top {
+      @include mediaquery--not-lg() {
+        > [class^='container'] {
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+
+  &--md {
+    > [class^='container'] {
+      padding-bottom: 48px;
+
+      @include mediaquery--not-lg() {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &--sm {
+    > [class^='container'] {
+      padding-bottom: 40px;
+    }
+  }
+
+  &--xs {
+    > [class^='container'] {
+      padding-bottom: 32px;
+  
+      @include mediaquery--sm() {
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  &--xxs {
+    > [class^='container'] {
+      padding-bottom: 24px;
+    }
+  }
+
+  &--clear {
+    background-color: transparent;
+  }
+
+  &--grey {
+    background-color: $color-wild-sand;
+  }
+
+  &--change-bg {
+    @include mediaquery--not-lg() {
+      background-color: $color-white !important;
+    }
+  }
+}
+
+.section-balance {
+  &--xxl {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    @include mediaquery--sm() {
+      padding-bottom: 64px;
+      padding-top: 64px;
+    }
+  }
+
+  &--xlg {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    @include mediaquery--sm() {
+      padding-bottom: 48px;
+      padding-top: 48px;
+    }
+  }
+
+  &--lg {
+    padding-bottom: 64px;
+    padding-top: 64px;
+
+    &.is-respond {
+      @include mediaquery--sm() {
+        padding-bottom: 40px;
+        padding-top: 40px;
+      }
+    }
+  }
+
+  &--xs {
+    > [class^='container'] {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
+  }
+}
+
+.section-seperate {
+  &--lg {
+    margin-bottom: 200px;
+
+    @include mediaquery--not-lg() {
+      margin-bottom: 112px;
+    }
+  }
+
+  &--md {
+    @include mediaquery--md() {
+      margin-bottom: 96px;
+    }
+  
+    @include mediaquery--sm() {
+      margin-bottom: 72px;
+    }
+  }
+}
+
+// Unique Section
+.section-unique {
+  &--xxl {
+    > [class^='container'] {
+      padding-bottom: 134px;
+  
+      @include mediaquery--not-lg() {
+        padding-bottom: 64px;
+      }
+    }
+  }
+  
+  &--xxlg {
+    > [class^='container'] {
+      padding-bottom: 104px;
+  
+      @include mediaquery--sm() {
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  &--xlg {
+    > [class^='container'] {
+      padding-bottom: 80px;
+  
+      @include mediaquery--not-lg() {
+        padding-bottom: 64px;
+      }
+    }
+  }
+
+  &--lg {
+    > [class^='container'] {
+      padding-bottom: 80px;
+  
+      @include mediaquery--md() {
+        padding-bottom: 56px;
+      }
+  
+      @include mediaquery--sm() {
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  &--md {
+    > [class^='container'] {
+      padding-bottom: 64px;
+  
+      @include mediaquery--sm() {
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  &--sm {
+    > [class^='container'] {
+      padding-bottom: 48px;
+    
+      @include mediaquery--sm() {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &--xs {
+    > [class^='container'] {
+      padding-bottom: 48px;
+  
+      @include mediaquery--md() {
+        padding-bottom: 32px;
+      }
+
+      @include mediaquery--sm() {
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  &--xxs {
+    > [class^='container'] {
+      padding-bottom: 40px;
+  
+      @include mediaquery--sm() {
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  &--xxxs {
+    > [class^='container'] {
+      padding-bottom: 32px;
+    }
+  }
+}

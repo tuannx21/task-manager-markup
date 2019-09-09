@@ -1,0 +1,29 @@
+.main {
+  position: relative;
+
+  > [class^='section']:first-child {
+    padding-top: 120px;
+
+    @include mediaquery--not-lg() {
+      padding-top: 78px;
+    }
+
+    [class^='container'] {
+      padding-top: 80px;
+
+      @include mediaquery--md {
+        padding-top: 64px;
+      }
+
+      @include mediaquery--sm() {
+        padding-top: 32px;
+      }
+    }
+  }
+
+  &.no-padding-top {
+    [class^='section']:first-child [class^='container'] {
+      padding-top: 0 !important;
+    }
+  }
+}
