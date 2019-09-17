@@ -1,0 +1,46 @@
+.tasks {
+  margin-top: 24px;
+
+  .task + .task {
+    margin-top: 8px;
+  }
+}
+
+.task {
+  position: relative;
+  padding: 20px 16px;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+
+  &__input {
+    min-width: 0;
+    font-size: 24px;
+    line-height: 1;
+    color: $color-black;
+    background-color: transparent;
+    border: 0;
+    padding: 0 8px;
+    flex-grow: 1;
+  }
+
+  &__remove,
+  &__toggle {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  // &__remove {
+  //   opacity: 0
+  // }
+
+  // &:hover {
+  //   .task__remove {
+  //     opacity: 1;
+  //   }
+  // }
+}

@@ -15,7 +15,7 @@
   &--xlg {
     > [class^='container'] {
       padding-bottom: 80px;
-  
+
       @include mediaquery--sm() {
         padding-bottom: 48px;
       }
@@ -25,7 +25,7 @@
   &--lg {
     > [class^='container'] {
       padding-bottom: 80px;
-  
+
       @include mediaquery--md() {
         padding-bottom: 64px;
       }
@@ -63,7 +63,7 @@
   &--xs {
     > [class^='container'] {
       padding-bottom: 32px;
-  
+
       @include mediaquery--sm() {
         padding-bottom: 24px;
       }
@@ -78,10 +78,6 @@
 
   &--clear {
     background-color: transparent;
-  }
-
-  &--grey {
-    background-color: $color-wild-sand;
   }
 
   &--change-bg {
@@ -145,7 +141,7 @@
     @include mediaquery--md() {
       margin-bottom: 96px;
     }
-  
+
     @include mediaquery--sm() {
       margin-bottom: 72px;
     }
@@ -157,17 +153,17 @@
   &--xxl {
     > [class^='container'] {
       padding-bottom: 134px;
-  
+
       @include mediaquery--not-lg() {
         padding-bottom: 64px;
       }
     }
   }
-  
+
   &--xxlg {
     > [class^='container'] {
       padding-bottom: 104px;
-  
+
       @include mediaquery--sm() {
         padding-bottom: 80px;
       }
@@ -177,7 +173,7 @@
   &--xlg {
     > [class^='container'] {
       padding-bottom: 80px;
-  
+
       @include mediaquery--not-lg() {
         padding-bottom: 64px;
       }
@@ -187,11 +183,11 @@
   &--lg {
     > [class^='container'] {
       padding-bottom: 80px;
-  
+
       @include mediaquery--md() {
         padding-bottom: 56px;
       }
-  
+
       @include mediaquery--sm() {
         padding-bottom: 32px;
       }
@@ -201,7 +197,7 @@
   &--md {
     > [class^='container'] {
       padding-bottom: 64px;
-  
+
       @include mediaquery--sm() {
         padding-bottom: 32px;
       }
@@ -211,7 +207,7 @@
   &--sm {
     > [class^='container'] {
       padding-bottom: 48px;
-    
+
       @include mediaquery--sm() {
         padding-bottom: 40px;
       }
@@ -221,7 +217,7 @@
   &--xs {
     > [class^='container'] {
       padding-bottom: 48px;
-  
+
       @include mediaquery--md() {
         padding-bottom: 32px;
       }
@@ -235,7 +231,7 @@
   &--xxs {
     > [class^='container'] {
       padding-bottom: 40px;
-  
+
       @include mediaquery--sm() {
         padding-bottom: 32px;
       }

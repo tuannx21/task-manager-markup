@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,34 @@
   <title>Test page</title>
   <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-  
+  <div class="main">
+    <div class="container">
+      
 <div class="user">
-  <img class="user__avatar" style="height: 100px; width: 100px">
-  <h1 class="user__name">Nguyen Xuan tuan</h1>
-</div>
-<div class="filter">
-  <button>By Date</button>
-  <button>undone</button>
-  <button>done</button>
+  <img src="/img/avatar.jpg" class="user__avatar">
+  <h1 class="user__name">Tuan Nguyen</h1>
 </div>
 <ul class="tasks">
-  <li>
-    <p class="task__title">adasda sda sd asd </p>
-    <button>edit</button>
-    <button>remove</button>
-  </li>
-  <li>
-    <p class="task__title">adasda sda sd asd </p>
-    <button>edit</button>
-    <button>remove</button>
-  </li>
-  <li>
-    <p class="task__title">adasda sda sd asd </p>
-    <button>edit</button>
-    <button>remove</button>
+  <li class="task">
+    <label class="form-checkbox task__toggle">
+      <input type="checkbox" id="checkbox" />
+      <span></span>
+    </label>
+    <input type="text" class="task__input" value="to do task 1" readonly />
+    <button class="task__remove">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+        <path fill="currentColor" fill-rule="evenodd"
+          d="M21 4.4L19.6 3 12 10.6 4.4 3 3 4.4l7.6 7.6L3 19.6 4.4 21l7.6-7.6 7.6 7.6 1.4-1.4-7.6-7.6z" /></svg>
+    </button>
   </li>
 </ul>
 
+    </div>
+  </div>
+
   <script src="/js/bundle.min.js"></script>
 </body>
+
 </html>
